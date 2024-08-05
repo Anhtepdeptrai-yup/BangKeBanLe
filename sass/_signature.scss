@@ -1,0 +1,13 @@
+.signature{
+    display:flex;
+    justify-content: space-between;
+    align-items: start;
+
+    &-group{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    margin-bottom: 900px;
+}

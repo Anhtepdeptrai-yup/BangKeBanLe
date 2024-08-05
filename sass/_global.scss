@@ -1,0 +1,83 @@
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    //padding: 0 40px;
+}
+
+body{
+    line-height: 1;
+    font-family: $font;
+    color: $primary-color;
+    font-weight: 400;
+    background-color: white;
+}
+
+.normal-input{
+    width: 200px;
+    height: 25px;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 20px; 
+    border: none;
+    border-bottom: 1px dotted #000;
+    outline: none;
+    flex: 1
+}
+
+.small-input{
+    width:100px;
+    height: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px dotted #000;
+    outline: none;
+}
+
+label{
+    margin-right: 5px;
+}
+
+input{
+    margin-right: 5px;
+}
+
+.huge-input{
+    width: 400px;
+    height: 22px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px dotted #000;
+    outline: none;  
+}
+
+.upload-button {
+    background-color: #234582;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block; /* Ensure it behaves like a button */
+    text-align: center;
+    margin-top: 10px;
+}
+.upload-button:hover {
+    background-color: #1d58c5;
+}
+.file-upload {
+    display: none; /* Hide the actual file input */
+}
+.image-container {
+    margin-top: 20px;
+}
+.image-container img {
+    max-width: 200px; /* Set the maximum width */
+    max-height: 200px; /* Set the maximum height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 10px 0; /* Add some spacing */
+}

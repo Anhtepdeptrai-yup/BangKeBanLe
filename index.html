@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Kê Bán Lẻ</title>
+    <link rel = "stylesheet" href = "css/app.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <!-- Qr Code-->
+            <img srcset ="images/qrcode.png 2x" alt="">
+            <!-- Tựa, ngày tháng năm -->
+            <div class="header-description">
+                <h1 class = "text-large">BẢNG KÊ BÁN LẺ</h1>
+                <form>
+                    <div class="header-dmy">
+                        <label for = "stt" class = "text">Stt </label>
+                        <input type = "text" id = "stt" class = "small-input">
+                        <label for = "day" class = "text">Ngày </label>
+                        <input type = "text" id = "day" class = "small-input" style = "width: 50px">
+                        <label for = "month" class = "text">Tháng </label>
+                        <input type = "text" id = "month" class = "small-input" style = "width: 50px">
+                        <label for = "year" class = "text">Năm </label>
+                        <input type = "text" id = "year" class = "small-input" style = "width: 80px">
+                    </div>
+                </form>
+            </div>
+            <!-- Địa Điểm -->
+            <div class="header-location">
+                <h3 class = "text-medium header-location-main">DỰ ÁN ĐÔNG Y VIỆT</h3>
+                <br>
+                <p class="text header-location-specific">Tầng 29 tòa Đông,</p>
+                <p class="text header-location-specific">TT Lotte, Số 54 Liễu Giai, </p>
+                <p class="text header-location-specific">P. Cống Vị, Q. Ba Đình, Tp. HN</p>
+                <p class="text header-location-specific">Hotline: 0936 106 839</p>
+                <br><br>
+                <form action="" style = "display: flex; align-items: center;">
+                    <label for = "customer-id" class = "text"> Mã KH:</label>
+                    <input type = text id = "customer-id" class = "normal-input">
+                </form>
+            </div>
+        </div>
+
+        <main>
+            <!-- Thông tin khách hàng -->
+            <section class="user">
+                <form action="" class= "user-form">
+                    <div class="user-info">
+                        <label for = "name" class = "text">Họ và tên người mua hàng: </label>
+                        <input type = "text" id = "name" class = "normal-input" >
+                    </div>
+
+                    <div class="user-info"> 
+                        <label for = "address" class = "text">Địa chỉ:  </label>
+                        <input type = "text" id = "address" class = "normal-input">
+                    </div>
+
+                    <div class="user-info">
+                        <label for = "city" class = "text">Tỉnh/ Thành phố: </label>
+                        <input type = "text" id = "city" class = "normal-input">
+                        <label for = "district" class = "text">Quận/ Huyện: </label>
+                        <input type = "text" id = "district" class = "normal-input">
+                        <label for = "ward" class = "text">Phường/ Xã:</label>
+                        <input type = "text" id = "ward" class = "normal-input">
+                    </div>
+
+                    <div class="user-info">
+                        <label for = "phone-number" class = "text">SĐT: </label>
+                        <input type = "text" id = "phone-number" class = "normal-input">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Thông tin hàng hóa -->
+            <section class="transport">
+                <form action="" class="transport-info1">
+                    <div class="transport-item">
+                        <label for = "item-name" class = "text">Tên hàng hóa: </label>
+                        <input type = "text" id = "item-name" class = "normal-input" style = "width: 500px">
+                    </div>
+
+                    <div class="transport-item">
+                        <label for = "quantity" class = "text">Số lượng: </label>
+                        <input type = "text" id = "quantity" class = "normal-input" style = "width: 550px">
+                    </div>
+
+                    <div class="transport-item">
+                        <label for = "price" class = "text">Giá trị: </label>
+                        <input type = "text" id = "price" class = "normal-input" style = "width: 582px">
+                    </div>
+
+                    <div class="transport-item"> 
+                        <label for = "payment-method" class = "text">Hình thức thanh toán tiền hàng: </label>
+                        <input type = "text" id = "payment-method" class = "normal-input" style = "width: 290px">
+                    </div>
+
+                    <div class="transport-item">
+                        <label for = "document" class = "text">Chứng từ kèm theo: </label>
+                        <input type = "text" id = "document" class = "normal-input" style = "width: 430px">
+                    </div>
+                </form>
+
+                <form action="" class="transport-info2">
+                    <div class="transport-item">
+                        <label for = "carrier" class = "text">Đơn vị vận tải: </label>
+                        <input type = "text" id = "carrier" class = "normal-input" style = "width: 400px">
+                    </div>
+
+                    <div class="transport-item">
+                        <label for = "weight" class = "text">Cân nặng:</label>
+                        <input type = "text" id = "weight" class = "normal-input" style = "width: 456px">
+                    </div>
+
+                    <div class="transport-item">
+                        <label for = "total-transport-fee" class = "text">Tổng cước phí:  </label>
+                        <input type = "text" id = "total-transport-fee" class = "normal-input" style = "width: 396px">
+                    </div>
+
+                    <div class="transport-item"> 
+                        <label for = "transport-fee-paid" class = "text">Thanh toán cước phí:  </label>
+                        <input type = "text" id = "transport-fee-paid" class = "normal-input" style = "width: 325px">
+                    </div>
+
+                    <div class="transport-item">
+                        <label for = "estimated-delivery-date" class = "text">Thời gian dự kiến giao hàng:  </label>
+                        <input type = "text" id = "estimated-delivery-date" class = "normal-input" style = "width: 234px">
+                    </div>
+
+                    <div class="transport-item">
+                        <label for = "delivered-dateandtime" class = "text">Ngày giờ đã giao hàng:  </label>
+                        <input type = "text" id = "delivered-dateandtime" class = "normal-input" style = "width: 302px">
+                    </div>
+
+                    <div class="transport-item">
+                        <label for = "returned-dateandtime" class = "text">Ngày giờ hàng bị trả lại: </label>
+                        <input type = "text" id = "returned-dateandtime" class = "normal-input" style = "width: 290px">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Ghi chú-->
+            <section class="note">
+                <form>
+                    <label< for = "user-note" class = "text">Ghi chú: </label>
+                    <textarea name="user-note" id="user-note" cols="30" rows="10" class = "normal-input"></textarea>
+                </form>
+            </section>
+
+            <!-- Chữ ký -->
+            <section class="signature">
+                <div class="signature-group">
+                    <div class="signature-name">
+                        <p class="text-bold">Người đề nghị bán hàng</p>
+                    </div>
+                    <div class="sginature-requirement">
+                        <p class="text-italic">( Ký, họ tên )</p>
+                    </div>
+                    <div class="upload-container">
+                        <label for="file-upload1" class="upload-button">Choose Image 1</label>
+                        <input type="file" id="file-upload1" class="file-upload" accept="image/*">
+                        <div id="image-container1" class="image-container"></div>
+                    </div>
+                </div>
+
+                <div class="signature-group">
+                    <div class="signature-name">
+                        <p class="text-bold">Phụ trách Kinh doanh</p>
+                    </div>
+                    <div class="sginature-requirement">
+                        <p class="text-italic">( Ký, họ tên )</p>
+                    </div>
+                    <div class="upload-container">
+                        <label for="file-upload2" class="upload-button">Choose Image 2</label>
+                        <input type="file" id="file-upload2" class="file-upload" accept="image/*">
+                        <div id="image-container2" class="image-container"></div>
+                    </div>
+                </div>
+
+                <div class="signature-group">
+                    <div class="signature-name">
+                        <p class="text-bold">Phụ trách Kế toán</p>
+                    </div>
+                    <div class="sginature-requirement">
+                        <p class="text-italic">( Ký, họ tên )</p>
+                    </div>
+                    <div class="upload-container">
+                        <label for="file-upload3" class="upload-button">Choose Image 3</label>
+                        <input type="file" id="file-upload3" class="file-upload" accept="image/*">
+                        <div id="image-container3" class="image-container"></div>
+                    </div>
+                </div>
+
+                <div class="signature-group">
+                    <div class="signature-name">
+                        <p class="text-bold">Thủ trưởng đơn vị </p>
+                    </div>
+                    <div class="sginature-requirement">
+                        <p class="text-italic">( Ký, họ tên, đóng dấu )</p>
+                    </div>
+                    <div class="upload-container">
+                        <label for="file-upload4" class="upload-button">Choose Image 4</label>
+                        <input type="file" id="file-upload4" class="file-upload" accept="image/*">
+                        <div id="image-container4" class="image-container"></div>
+                    </div>
+                </div>
+            </section>
+        </main> 
+
+        <div class="footer">
+            <h1 class="text-large" style = "font-weight: bold;"> DỰ ÁN ĐÔNG Y VIỆT</h1>
+        </div>
+    </div>
+    <script src = "scripts/app.js"></script>
+</body>
+</html>

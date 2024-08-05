@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6{
+    color: $primary-color;
+    font-weight: bold;
+}
+
+.text-large{
+    font-weight: 500;
+    font-size: 60px;
+    color: $primary-color;  
+}
+
+.text-medium{
+    font-weight: 200;
+    font-size: 40px;
+    color: $primary-color;
+}
+
+.text{
+    font-weight: 200;
+    font-size: 30px;
+    color: $primary-color;
+}
+
+.text-bold{
+    font-weight: bold;
+    font-size: 30px;
+    color: $primary-color;
+}
+
+.text-italic{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 30px;
+    color: $primary-color;
+    margin-bottom: 15px;
+}
